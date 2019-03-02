@@ -6,7 +6,7 @@
 #define SHINEKTV_ANDROID_SHINELOG_H
 
 
-
+//haiqing
 #include <android/log.h>
 #define TAG "shine-jni"
 
