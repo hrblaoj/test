@@ -1,0 +1,137 @@
+package com.shinetvbox.vod.service.wechat;
+
+import android.annotation.SuppressLint;
+import android.app.Service;
+import android.content.Intent;
+import android.os.Handler;
+import android.os.IBinder;
+import android.os.Message;
+import android.util.Log;
+
+import com.shinetvbox.vod.MyApplication;
+import com.shinetvbox.vod.data.constants.Constants;
+import com.shinetvbox.vod.socket.MySocket;
+import com.shinetvbox.vod.utils.DateUtil;
+import com.shinetvbox.vod.utils.MD5Util;
+import com.zhy.http.okhttp.OkHttpUtils;
+import com.zhy.http.okhttp.callback.StringCallback;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import okhttp3.Call;
+import okhttp3.Request;
+
+public class WechatService  extends Service {
+
+    private MySocket mySocket;
+    private Handler handler;
+    private String loginInfo;
+    private String heartClient = "[beat]\r\n\r\n";;
+    private String heartServer = "ok";
+
+    @Override
+    public IBinder onBind(Intent intent) {
+        return null;
+    }
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+//        initSocket();
+    }
+    private void initSocket(){
+        if(mySocket!=null) return;
+        initHandler();
+        loginInfo  = "[placeid="+MyApplication.PLACE_ID +"&passwd="+MyApplication.PLACE_PASSWD+"]\r\n\r\n";
+        new Thread( new Runnable() {
+            @Override
+            public void run() {
+                mySocket = new MySocket( Constants.WECHAT_IP,Constants.WECHAT_PORT,20000 );
+                mySocket.setLoginInfo(loginInfo);
+                mySocket.setHeartBeatInitiative( heartClient, heartServer,15000);
+                mySocket.setOnChangeHandler( handler );
+                mySocket.connect(3000);
+            }
+        } ).start();
+    }
+
+    @SuppressLint("HandlerLeak")
+    private void initHandler() {
+        handler = new Handler(  ){
+            @Override
+            public void handleMessage(Message msg) {
+                switch (msg.what) {
+                    case MySocket.EVENT_SOCKET_CONNECT:
+                        Log.i( "shinetvbox","微信点歌服务器连接成功!" );
+                        break;
+                    case MySocket.EVENT_SOCKET_DISCONNECT:
+                        break;
+                    case MySocket.EVENT_SOCKET_RECEIVE_DATA:
+                        Log.i( "2222222222222","---------------------------receive："+msg.obj );
+                        if(!msg.obj.equals( "ok" ) && !msg.obj.equals( "200 OK" )){
+//                            analysisJson( (String) msg.obj );
+                            Log.i( "2222222222222","---------------------------receive："+msg.obj );
+                        }else if(msg.obj.equals( "200 OK" )){
+                            Log.i( "shinetvbox","微信点歌服务开启可进行交互!" );
+                            getWechatInfo();
+                        }
+                        break;
+                }
+            }
+        };
+    }
+   // mac(机器注册MAC地址)
+//    timestamp（请求时间戳）
+   // noncestr（随机字符串）
+//    roomid(十位包房号)
+//    sign(签名)(String)
+    private void getWechatInfo(){
+        OkHttpUtils.post()
+                .id( MyStringCallback.TYPE_VERSION_INFO  )
+                .url( Constants.HTTP_WECHAT_INFO )
+                .params( getVersionPostParams() )
+                .build()
+                .connTimeOut( 10000 )
+                .readTimeOut( 10000 )
+                .execute( new MyStringCallback() );
+    }
+    public Map<String,String> getVersionPostParams(){
+        String strRandom = ""+ (int) (Math.random()*10000000);
+        String strDate = DateUtil.getTimeInSecond();
+        String sign = "mac="+MyApplication.MAC_ADDRESS+"&noncestr="+strRandom+"&roomid="+MyApplication.PLACE_ID
+                +"&timestamp="+strDate+"&key=platZP6SNVHJoaTJOq4bon6tXL2HWc5R";
+        Map<String, String> params = new HashMap<>();
+        params.put("sign", MD5Util.string2MD5( sign ).toUpperCase());
+        params.put("roomid", MyApplication.PLACE_ID);
+        params.put("mac", MyApplication.MAC_ADDRESS);
+        params.put("timestamp", strDate);
+        params.put("noncestr", strRandom);
+        Log.i( "22222222222222",sign +"============="+MD5Util.string2MD5( sign ).toUpperCase()+"============"+params );
+        return params;
+    }
+    public static class MyStringCallback extends StringCallback {
+        public static final int TYPE_VERSION_INFO = 0;
+
+        public MyStringCallback() {
+        }
+        @Override
+        public void onBefore(Request request, int id) {
+        }
+        @Override
+        public void onAfter(int id) {
+        }
+        @Override
+        public void onError(Call call, Exception e, int id) {
+        }
+        @Override
+        public void inProgress(float progress, long total, int id) {
+        }
+        @Override
+        public void onResponse(String response, int id) {
+            if(id == TYPE_VERSION_INFO){
+                Log.i( "22222222222",response );
+            }
+        }
+    }
+}

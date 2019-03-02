@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/app_home_wechat_qrcode"
+        android:layout_width="@dimen/x261"
+        android:layout_height="@dimen/y659"
+        android:layout_marginLeft="@dimen/x124"
+        android:layout_marginTop="@dimen/y70"
+        android:background="@drawable/btn_home_diangetai_shoujidiange"
+        android:tag="app_home_wechat_qrcode">
+
+        <TextView
+            android:id="@+id/app_home_phone"
+            android:layout_width="@dimen/x261"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y146"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:tag="app_home_phone"
+            android:text="@string/app_home_phone"
+            android:textColor="@color/colorHomePrimary"
+            android:textSize="@dimen/font_36"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/app_home_phone_hint"
+            android:layout_width="@dimen/x211"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y204"
+            android:gravity="center"
+            android:tag="app_home_phone_hint"
+            android:text="@string/app_home_phone_hint"
+            android:textColor="@color/colorHomePrimary"
+            android:textSize="@dimen/font_26" />
+
+        <ImageView
+            android:id="@+id/app_home_phone_qrcode"
+            android:layout_width="@dimen/x180"
+            android:layout_height="@dimen/y180"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y406"
+            android:background="@drawable/app_sunshine_wechat_qrcode" />
+    </RelativeLayout>
+
+    <com.shinetvbox.vod.view.custom.ButtonFocus
+        android:id="@+id/btn_home_diangetai_video"
+        android:layout_width="@dimen/x952"
+        android:layout_height="@dimen/y594"
+        android:layout_marginLeft="@dimen/x360"
+        android:layout_marginTop="@dimen/y1"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:tag="btn_home_diangetai_video"
+        app:focusIsZoomin="false">
+
+        <include layout="@layout/item_btn_focus_red_border3" />
+
+        <ImageView
+            android:layout_width="@dimen/x806"
+            android:layout_height="@dimen/y454"
+            android:layout_centerInParent="true"
+            android:background="@color/colorHomePrimary"
+            android:alpha="0.5"/>
+
+        <ImageView
+            android:id="@+id/btn_home_diangetai_video_image"
+            android:layout_width="@dimen/x782"
+            android:layout_height="@dimen/y432"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_home_diangetai_video" />
+
+    </com.shinetvbox.vod.view.custom.ButtonFocus>
+
+    <com.shinetvbox.vod.view.custom.ButtonFocus
+        android:id="@+id/btn_home_diangetai_paihangbang"
+        android:layout_width="@dimen/x394"
+        android:layout_height="@dimen/y594"
+        android:layout_marginLeft="@dimen/x1460"
+        android:layout_marginTop="@dimen/y2"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:tag="btn_home_diangetai_paihangbang">
+
+        <include layout="@layout/item_btn_focus_red_border1" />
+
+        <ImageView
+            android:layout_width="@dimen/x258"
+            android:layout_height="@dimen/y454"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_home_diangetai_paihangbang" />
+
+        <TextView
+            android:tag="app_home_paihangbang"
+            android:layout_width="@dimen/x250"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y436"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/app_home_paihangbang"
+            android:textColor="@color/colorHomePrimary"
+            android:textSize="@dimen/font_36"
+            android:textStyle="bold" />
+    </com.shinetvbox.vod.view.custom.ButtonFocus>
+
+    <com.shinetvbox.vod.view.custom.ButtonFocus
+        android:id="@+id/btn_home_diangetai_yingshijinqu"
+        android:layout_width="@dimen/x394"
+        android:layout_height="@dimen/y594"
+        android:layout_marginLeft="@dimen/x1186"
+        android:layout_marginTop="@dimen/y2"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:tag="btn_home_diangetai_yingshijinqu">
+
+        <include layout="@layout/item_btn_focus_red_border1" />
+
+        <ImageView
+            android:layout_width="@dimen/x258"
+            android:layout_height="@dimen/y454"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_home_diangetai_yingshijinqu" />
+
+        <TextView
+            android:tag="app_home_yingshijinqu"
+            android:layout_width="@dimen/x250"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y436"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/app_home_yingshijinqu"
+            android:textColor="@color/colorHomePrimary"
+            android:textSize="@dimen/font_36"
+            android:textStyle="bold" />
+    </com.shinetvbox.vod.view.custom.ButtonFocus>
+
+    <com.shinetvbox.vod.view.custom.ButtonFocus
+        android:id="@+id/btn_home_diangetai_pinyindiange"
+        android:layout_width="@dimen/x394"
+        android:layout_height="@dimen/y336"
+        android:layout_marginLeft="@dimen/x364"
+        android:layout_marginTop="@dimen/y464"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:tag="btn_home_diangetai_pinyindiange">
+
+        <include layout="@layout/item_btn_focus_red_border2" />
+
+        <ImageView
+            android:layout_width="@dimen/x258"
+            android:layout_height="@dimen/y196"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_home_diangetai_pinyingdiange" />
+
+        <TextView
+            android:tag="app_home_pinyindiange"
+            android:layout_width="@dimen/x250"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y190"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/app_home_pinyindiange"
+            android:textColor="@color/colorHomePrimary"
+            android:textSize="@dimen/font_36"
+            android:textStyle="bold" />
+    </com.shinetvbox.vod.view.custom.ButtonFocus>
+
+    <com.shinetvbox.vod.view.custom.ButtonFocus
+        android:id="@+id/btn_home_diangetai_gexingdiange"
+        android:layout_width="@dimen/x394"
+        android:layout_height="@dimen/y336"
+        android:layout_marginLeft="@dimen/x638"
+        android:layout_marginTop="@dimen/y464"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:tag="btn_home_diangetai_gexingdiange">
+
+        <include layout="@layout/item_btn_focus_red_border2" />
+
+        <ImageView
+            android:layout_width="@dimen/x258"
+            android:layout_height="@dimen/y196"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_home_diangetai_gexingdiange" />
+
+        <TextView
+            android:tag="app_home_gexingdiange"
+            android:layout_width="@dimen/x250"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y190"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/app_home_gexingdiange"
+            android:textColor="@color/colorHomePrimary"
+            android:textSize="@dimen/font_36"
+            android:textStyle="bold" />
+    </com.shinetvbox.vod.view.custom.ButtonFocus>
+
+    <com.shinetvbox.vod.view.custom.ButtonFocus
+        android:id="@+id/btn_home_diangetai_fenleidiange"
+        android:layout_width="@dimen/x394"
+        android:layout_height="@dimen/y336"
+        android:layout_marginLeft="@dimen/x912"
+        android:layout_marginTop="@dimen/y464"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:tag="btn_home_diangetai_fenleidiange">
+
+        <include layout="@layout/item_btn_focus_red_border2" />
+
+        <ImageView
+            android:id="@+id/btn_home_diangetai_fenleidiange_img"
+            android:layout_width="@dimen/x259"
+            android:layout_height="@dimen/y197"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_home_diangetai_fenleidiange" />
+
+        <TextView
+            android:tag="app_home_fenleidiange"
+            android:layout_width="@dimen/x250"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y190"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/app_home_fenleidiange"
+            android:textColor="@color/colorHomePrimary"
+            android:textSize="@dimen/font_36"
+            android:textStyle="bold" />
+    </com.shinetvbox.vod.view.custom.ButtonFocus>
+
+    <com.shinetvbox.vod.view.custom.ButtonFocus
+        android:id="@+id/btn_home_diangetai_xingetuijian"
+        android:layout_width="@dimen/x394"
+        android:layout_height="@dimen/y336"
+        android:layout_marginLeft="@dimen/x1186"
+        android:layout_marginTop="@dimen/y464"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:tag="btn_home_diangetai_xingetuijian">
+
+        <include layout="@layout/item_btn_focus_red_border2" />
+
+        <ImageView
+            android:layout_width="@dimen/x259"
+            android:layout_height="@dimen/y197"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_home_diangetai_xingetuijian" />
+
+        <TextView
+            android:tag="app_home_xingetuijian"
+            android:layout_width="@dimen/x250"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y190"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/app_home_xingetuijian"
+            android:textColor="@color/colorHomePrimary"
+            android:textSize="@dimen/font_36"
+            android:textStyle="bold" />
+    </com.shinetvbox.vod.view.custom.ButtonFocus>
+
+    <com.shinetvbox.vod.view.custom.ButtonFocus
+        android:id="@+id/btn_home_diangetai_yichanggequ"
+        android:layout_width="@dimen/x394"
+        android:layout_height="@dimen/y336"
+        android:layout_marginLeft="@dimen/x1460"
+        android:layout_marginTop="@dimen/y464"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:tag="btn_home_diangetai_yichanggequ">
+
+        <include layout="@layout/item_btn_focus_red_border2" />
+
+        <ImageView
+            android:layout_width="@dimen/x259"
+            android:layout_height="@dimen/y197"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_home_diangetai_yichanggequ" />
+
+        <TextView
+            android:tag="app_home_yichanggequ"
+            android:layout_width="@dimen/x250"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y190"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/app_home_yichanggequ"
+            android:textColor="@color/colorHomePrimary"
+            android:textSize="@dimen/font_36"
+            android:textStyle="bold" />
+    </com.shinetvbox.vod.view.custom.ButtonFocus>
+</RelativeLayout>

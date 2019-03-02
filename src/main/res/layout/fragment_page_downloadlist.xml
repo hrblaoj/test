@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="@dimen/x672"
+        android:layout_height="match_parent"
+        android:background="@drawable/image_keyboard_bg">
+        <TextView
+            android:id="@+id/text_downloadlist_title"
+            android:tag="text_downloadlist_title"
+            android:layout_width="@dimen/x560"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x86"
+            android:layout_marginTop="@dimen/y36"
+            android:textSize="@dimen/font_50"
+            android:textColor="@color/colorHomePrimary"
+            android:lines="1"
+            android:ellipsize="end"/>
+        <ImageView
+            android:id="@+id/image_downloadlist_thumbnail"
+            android:layout_width="@dimen/x303"
+            android:layout_height="@dimen/y303"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y230"/>
+
+        <Button
+            android:id="@+id/btn_downloadlist_clear"
+            android:tag="btn_downloadlist_clear"
+            android:layout_width="@dimen/x316"
+            android:layout_height="@dimen/y105"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y620"
+            android:background="@drawable/btn_yixuangequ_default"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textAllCaps="false"
+            android:text="@string/btn_downloadlist_clear"
+            android:textColor="@color/btn_selectedlist_default"
+            android:textSize="@dimen/font_30"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+        <include
+            android:layout_width="@dimen/x612"
+            android:layout_height="@dimen/y150"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y900"
+            layout="@layout/item_layout_wechat_qrcode"/>
+    </RelativeLayout>
+    <include layout="@layout/item_layout_page_number"
+        android:layout_width="@dimen/x316"
+        android:layout_height="@dimen/y66"
+        android:layout_marginLeft="@dimen/x768"
+        android:layout_marginTop="@dimen/y30" />
+    <RelativeLayout
+        android:id="@+id/songlist_body"
+        android:layout_width="@dimen/x1160"
+        android:layout_height="@dimen/y700"
+        android:layout_marginLeft="@dimen/x742"
+        android:layout_marginTop="@dimen/y200">
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/layout_selectlist_noresult"
+        android:layout_width="@dimen/x1100"
+        android:layout_height="@dimen/y80"
+        android:layout_marginLeft="@dimen/x742"
+        android:layout_marginTop="@dimen/y500"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="@dimen/x70"
+            android:layout_height="@dimen/y70"
+            android:background="@drawable/image_no_result"/>
+        <TextView
+            android:tag="xiazai_text_no_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:text="@string/xiazai_text_no_result"
+            android:textSize="@dimen/font_44"
+            android:textColor="@color/colorWarning"
+            android:lines="1"
+            android:ellipsize="end"/>
+    </LinearLayout>
+
+</RelativeLayout>

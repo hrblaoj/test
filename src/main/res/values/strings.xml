@@ -1,0 +1,270 @@
+<resources>
+    <string name="app_name">哒哒嗨唱</string>
+
+    <!--为翻页标签提供(R.id.tag_query)ID-->
+    <!--<item name="tag_query" type="id"/>-->
+    <!--为翻页Adapter提供(R.id.tag_adapter)ID-->
+    <item name="tag_adapter" type="id"/>
+
+    <!--首页-->
+    <string name="app_home_playing">正播放</string>
+    <string name="app_home_next">下一首</string>
+    <string name="app_home_free_song">空闲歌曲</string>
+    <string name="app_home_selected">已选</string>
+    <string name="app_home_download">下载</string>
+    <string name="app_home_sung">已唱歌曲</string>
+    <string name="app_home_diangetai">点歌台</string>
+    <string name="app_home_yingshi">影视</string>
+    <string name="app_home_yule">娱乐</string>
+    <string name="app_home_yingyong">应用</string>
+    <string name="app_home_phone">手机点歌</string>
+    <string name="app_home_phone_hint">扫描下图二维码&#x000D;即可手机点歌</string>
+    <string name="app_home_yingshijinqu">影视金曲</string>
+    <string name="app_home_paihangbang">排行榜</string>
+    <string name="app_home_pinyindiange">拼音点歌</string>
+    <string name="app_home_gexingdiange">歌星点歌</string>
+    <string name="app_home_fenleidiange">分类点歌</string>
+    <string name="app_home_xingetuijian">新歌推荐</string>
+    <string name="app_home_yichanggequ">已唱歌曲</string>
+
+    <!--语言切换-->
+    <string name="language_switch_text_title">语言切换</string>
+    <string name="language_switch_zhongwenjianti">中文简体</string>
+    <string name="language_switch_zhongwenfanti">中文繁体</string>
+    <string name="language_switch_yingyu">English</string>
+    <string name="language_switch_riyu">日本語</string>
+    <string name="language_switch_hanyu">한국어</string>
+    <string name="language_switch_jianpuzhai">កម្ពុជា</string>
+    <string name="language_switch_miandian">မြန်မာ</string>
+    <string name="language_switch_yinniyu">Orang indonesia</string>
+    <string name="language_switch_taiyu">ไทย</string>
+    <string name="language_switch_yuenanyu">Tiếng việt</string>
+
+    <!--小键盘-->
+    <string name="keyboard_text_qrcode_text">扫码点歌更方便！</string>
+    <string name="keyboard_text_qrcode_content">扫左侧二维码即可手机点歌</string>
+    <string name="keyboard_btn_sure">确定</string>
+
+    <!--已选歌曲-->
+    <string name="btn_selectedlist_sort">打乱顺序</string>
+    <string name="btn_selectedlist_clear">清空已选列表</string>
+    <string name="yixuangequ_text_no_result">您还未点播任何歌曲！</string>
+    <!--下载歌曲-->
+    <string name="btn_downloadlist_clear">清空下载列表</string>
+    <string name="xiazai_text_no_result">您未下载任何歌曲！</string>
+    <!--已唱歌曲-->
+    <string name="btn_sunglist_clear">清除历史记录</string>
+    <string name="yichanggequ_text_hint">已唱过</string>
+    <string name="yichanggequ_text_hint_content">xxx首歌曲</string>
+    <string name="yichanggequ_text_no_result">您还未演唱任何歌曲！</string>
+
+    <!--影视金曲-->
+    <string name="yingshijinqu_text_keyboard_hint">可搜索影视名,如《西游记》输入“XYJ”</string>
+
+    <!--拼音点歌-->
+    <string name="pinyindiange_text_keyboard_hint">例如“演员”输入“YY”</string>
+    <string name="pinyindiange_text_no_result">未查找到相关歌曲信息！</string>
+
+    <!--新歌推荐-->
+    <string name="xingetuijian_text_hint">为您推荐</string>
+    <string name="xingetuijian_text_hint_content">xxx首</string>
+
+    <!--排行榜-->
+    <string name="paihangbang_text_hint">本榜单</string>
+    <string name="paihangbang_text_hint_content">共xxx首</string>
+
+    <!--歌星列表-->
+    <string name="gexingdiange_text_keyboard_hint">例如“薛之谦”输入“XZQ”</string>
+    <string name="gexingdiange_text_no_result">未查找到相关歌星信息！</string>
+
+    <!--歌星歌曲列表-->
+    <string name="gexingdiange_gequ_text_keyboard_hint">xxx首</string>
+
+    <!--歌星点歌-->
+    <string name="gexingdiange_type_quanbugexing">全部歌星</string>
+    <string name="gexingdiange_type_huarennanxing">华人男星</string>
+    <string name="gexingdiange_type_huarennvxing">华人女星</string>
+    <string name="gexingdiange_type_huarenzuhe">华人组合</string>
+    <string name="gexingdiange_type_hanrigexing">韩日歌星</string>
+    <string name="gexingdiange_type_omeigexing">欧美歌星</string>
+    <string name="gexingdiange_type_waiguozuhe">外国组合</string>
+
+    <!--分类点歌-->
+    <string name="fenleidiange_btn_type_yuzhong">语种</string>
+    <string name="fenleidiange_btn_type_zhuti">主题</string>
+    <string name="fenleidiange_btn_type_zongyi">综艺</string>
+    <string name="fenleidiange_btn_type_xiqu">戏曲</string>
+
+    <string name="fenleidiange_type_yuzhong_quanbuyuzhong">全部语种</string>
+    <string name="fenleidiange_type_yuzhong_guoyu">国语</string>
+    <string name="fenleidiange_type_yuzhong_yueyu">粤语</string>
+    <string name="fenleidiange_type_yuzhong_minnanyu">闽南语</string>
+    <string name="fenleidiange_type_yuzhong_yingyu">英语</string>
+    <string name="fenleidiange_type_yuzhong_hanyu">韩语</string>
+    <string name="fenleidiange_type_yuzhong_riyu">日语</string>
+    <string name="fenleidiange_type_yuzhong_qitaiyuzhong">其它语种</string>
+
+    <string name="fenleidiange_type_zhuti_shengrizhufu">生日祝福</string>
+    <string name="fenleidiange_type_zhuti_tianmiduichang">甜蜜对唱</string>
+    <string name="fenleidiange_type_zhuti_jindianhongge">经典红歌</string>
+    <string name="fenleidiange_type_zhuti_kuailetongnian">快乐童年</string>
+    <string name="fenleidiange_type_zhuti_liaoliangjunge">嘹亮军歌</string>
+    <string name="fenleidiange_type_zhuti_jingdiandiqu">经典迪曲</string>
+    <string name="fenleidiange_type_zhuti_nongqingwuqu">浓情舞曲</string>
+    <string name="fenleidiange_type_zhuti_difangminge">地方民歌</string>
+    <string name="fenleidiange_type_zhuti_douyinrege">抖音热歌</string>
+
+    <string name="fenleidiange_type_zongyi_chunwan">央视春节联欢晚会</string>
+    <string name="fenleidiange_type_zongyi_mengxiangdeshengyin">梦想的声音</string>
+    <string name="fenleidiange_type_zongyi_geshoulaile">歌手来了</string>
+    <string name="fenleidiange_type_zongyi_weiluyinyuhui">围炉音乐会</string>
+    <string name="fenleidiange_type_zongyi_zhongguohaogequ">中国好歌曲</string>
+    <string name="fenleidiange_type_zongyi_woshigeshou">我是歌手</string>
+    <string name="fenleidiange_type_zongyi_mengmiangewang">蒙面歌王</string>
+    <string name="fenleidiange_type_zongyi_zhongguoxingesheng">中国新歌声</string>
+    <string name="fenleidiange_type_zongyi_tianlaizhizhan">天籁之战</string>
+    <string name="fenleidiange_type_zongyi_zhongguozhixing">中国之星</string>
+    <string name="fenleidiange_type_zongyi_zhongguohaoshenyin">中国好声音</string>
+    <string name="fenleidiange_type_zongyi_zhongguomengzhisheng">中国梦之声</string>
+    <string name="fenleidiange_type_zongyi_zhongguoxinshengdai">中国新声代</string>
+    <string name="fenleidiange_type_zongyi_chaojigedan">超级歌单</string>
+    <string name="fenleidiange_type_zongyi_kuajiegewang">跨界歌王</string>
+    <string name="fenleidiange_type_zongyi_gaishiyingxiong">盖世英雄</string>
+    <string name="fenleidiange_type_zongyi_woxianghenichang">我想和你唱</string>
+    <string name="fenleidiange_type_zongyi_chuangzao101">创造101</string>
+    <string name="fenleidiange_type_zongyi_zuimeihesheng">最美和声</string>
+
+    <string name="fenleidiange_type_xiqu_jingju">京剧</string>
+    <string name="fenleidiange_type_xiqu_qinqiang">秦腔</string>
+    <string name="fenleidiange_type_xiqu_huangmeixi">黄梅戏</string>
+    <string name="fenleidiange_type_xiqu_hebeibangzi">河北梆子</string>
+    <string name="fenleidiange_type_xiqu_yuju">豫剧</string>
+    <string name="fenleidiange_type_xiqu_yueju1">粤剧</string>
+    <string name="fenleidiange_type_xiqu_huju">沪剧</string>
+    <string name="fenleidiange_type_xiqu_yueju2">越剧</string>
+    <string name="fenleidiange_type_xiqu_pingju">评剧</string>
+    <string name="fenleidiange_type_xiqu_huaguxi">花鼓戏</string>
+    <string name="fenleidiange_type_xiqu_pingtan">评弹</string>
+    <string name="fenleidiange_type_xiqu_yangbanxi">样板戏</string>
+
+    <!--排行榜-->
+    <string name="paihangbang_diangezongbang">点唱总榜</string>
+    <string name="paihangbang_guoyubang">国语榜</string>
+    <string name="paihangbang_yueyubang">粤语榜</string>
+    <string name="paihangbang_minnanyubang">闽南语榜</string>
+    <string name="paihangbang_yingyubang">英语榜</string>
+
+    <!--歌曲列表-->
+    <string name="item_layout_btn_yidian">已点</string>
+    <string name="item_layout_btn_xiazai">下载</string>
+    <string name="item_layout_btn_xiazai_failure">失败</string>
+    <string name="item_layout_btn_playing">播放</string>
+    <string name="item_layout_btn_guoyu">国语</string>
+    <string name="item_layout_btn_yingshi">影视</string>
+    <string name="item_layout_btn_bendi">本地</string>
+    <string name="item_layout_btn_remen">热门</string>
+    <string name="item_layout_btn_pingfen">评分</string>
+    <string name="item_layout_btn_yuanchuang">原创</string>
+    <string name="item_layout_btn_gaoqing">高清</string>
+
+    <!-- 数据库保存 歌曲语种 -->
+    <string name="song_list_db_lang1">国语</string>
+    <string name="song_list_db_lang2">粤语</string>
+    <string name="song_list_db_lang3">闽南</string>
+    <string name="song_list_db_lang4">英语</string>
+    <string name="song_list_db_lang5">韩语</string>
+    <string name="song_list_db_lang6">日语</string>
+    <string name="song_list_db_lang7">泰语</string>
+    <string name="song_list_db_lang8">泰语</string>
+    <string name="song_list_db_lang9">蒙语</string>
+    <string name="song_list_db_lang10">俄语</string>
+    <string name="song_list_db_lang11">藏语</string>
+    <string name="song_list_db_lang12">朝语</string>
+    <string name="song_list_db_lang13">德语</string>
+    <string name="song_list_db_lang14">法语</string>
+    <string name="song_list_db_lang15">菲律宾语</string>
+    <string name="song_list_db_lang16">马来西亚语</string>
+    <string name="song_list_db_lang17">苗语</string>
+    <string name="song_list_db_lang18">意大利语</string>
+    <string name="song_list_db_lang19"></string>
+    <string name="song_list_db_lang20">印度</string>
+    <string name="song_list_db_lang21">印尼</string>
+    <string name="song_list_db_lang22">壮语</string>
+    <string name="song_list_db_lang23">葡萄牙语</string>
+    <string name="song_list_db_lang24">荷兰语</string>
+    <string name="song_list_db_lang25">波兰语</string>
+    <string name="song_list_db_lang26">保加利亚语</string>
+    <string name="song_list_db_lang27"></string>
+    <string name="song_list_db_lang28">土耳其语</string>
+    <string name="song_list_db_lang29">越南</string>
+    <string name="song_list_db_lang30">侗语</string>
+    <string name="song_list_db_lang31">拉丁</string>
+    <string name="song_list_db_lang32">西班牙语</string>
+    <string name="song_list_db_lang33">客家</string>
+    <string name="song_list_db_lang34">罗马尼亚语</string>
+    <string name="song_list_db_lang35">乌孜别克语</string>
+    <string name="song_list_db_lang36">纳西</string>
+    <string name="song_list_db_lang37">彝语</string>
+    <string name="song_list_db_lang38">朝鲜语</string>
+    <string name="song_list_db_lang39">其他</string>
+    <!-- 数据库保存 歌曲类型 -->
+    <string name="song_list_db_version1">MTV</string>
+    <string name="song_list_db_version2">风景</string>
+    <string name="song_list_db_version3">演唱</string>
+    <string name="song_list_db_version4">人物</string>
+    <string name="song_list_db_version5">故事</string>
+    <string name="song_list_db_version6">影视</string>
+    <string name="song_list_db_version7">欣赏</string>
+    <string name="song_list_db_version8">影视</string>
+    <string name="song_list_db_version9">其他</string>
+    <string name="song_list_db_version10">迪曲</string>
+    <string name="song_list_db_version11">舞曲</string>
+    <!--软件更新-->
+    <string name="updateapp_textview_title">应用升级</string>
+    <string name="updateapp_textview_version">发现到新版本:xxx</string>
+    <string name="updateapp_btn_sure">立即升级</string>
+    <string name="updateapp_btn_cancel">以后再说</string>
+    <!--支付页面-->
+    <string name="pay_text_title">VIP充值</string>
+    <string name="pay_combo_vip0">VIP xxx 天</string>
+    <string name="pay_combo_vip1">VIP xxx 个月</string>
+    <string name="pay_combo_vip2">VIP xxx 年</string>
+    <string name="btn_pay_combo_youhuijia">优惠价</string>
+    <string name="btn_pay_combo_price_unit">元</string>
+    <string name="btn_pay_combo_price">原价xxx元</string>
+    <string name="btn_pay_combo_discount">xxx 折</string>
+    <string name="btn_pay_combo_zunxiangfuwu">尊享服务</string>
+    <string name="btn_pay_combo_download">歌曲下载：</string>
+    <string name="btn_pay_combo_download_number">xxx首/天</string>
+    <string name="btn_pay_combo_sung">无限演唱：</string>
+    <string name="btn_pay_combo_play_number0">xxx天</string>
+    <string name="btn_pay_combo_play_number1">xxx个月</string>
+    <string name="btn_pay_combo_play_number2">xxx年</string>
+    <string name="pay_text_select_combo_title">已选套餐</string>
+    <string name="pay_text_select_combo_hint">微信扫码支付</string>
+    <string name="pay_text_select_combo_hint_error">二维码请求失败，请重试！</string>
+    <string name="pay_text_hint_freemember">温馨提示：非VIP用户每天限量下载xxx首歌曲，演唱yyy首歌曲</string>
+    <string name="pay_text_hint_viptime">VIP xxx 到期,剩余 yyy 天</string>
+    <string name="pay_btn_combo_duihuanma">兑换码</string>
+    <string name="pay_btn_combo_tuichu">退出</string>
+    <string name="pay_text_select_combo_price">￥xxx</string>
+    <string name="pay_cdkey_text_title">兑换码</string>
+    <string name="btn_pay_cdkey_input_hint">请输入兑换码</string>
+    <!--屏切-->
+    <string name="screen_control_btn_playnext">切歌</string>
+    <string name="screen_control_btn_yuanchang">原唱</string>
+    <string name="screen_control_btn_banchang">伴唱</string>
+    <string name="screen_control_btn_pause">暂停</string>
+    <string name="screen_control_btn_play">开始</string>
+    <string name="screen_control_btn_unmutex">静音</string>
+    <string name="screen_control_btn_mutex">放音</string>
+    <string name="screen_control_btn_replay">重唱</string>
+    <!--系统提示-->
+    <string name="system_hint_exit">再按一次退出程序</string>
+    <string name="system_hint_cloudserver_error">云下载服务未启动!</string>
+    <string name="system_hint_kongjianbuzu">空间不足，下载歌曲失败!</string>
+    <string name="system_hint_download_reject">今天下载次数已用完，下载失败!</string>
+    <string name="system_hint_download_failure">下载失败!</string>
+    <string name="system_hint_sung_failure">今天演唱次数已用完，充值VIP可无限欢唱!</string>
+
+</resources>

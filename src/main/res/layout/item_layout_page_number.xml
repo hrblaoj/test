@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x316"
+    android:layout_height="@dimen/y66">
+
+    <Button
+        android:id="@+id/page_number_prev"
+        android:tag="page_number_prev"
+        android:layout_width="@dimen/x66"
+        android:layout_height="@dimen/y66"
+        android:layout_marginLeft="@dimen/x0"
+        android:layout_marginTop="@dimen/y0"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/btn_page_number_left"/>
+    <TextView
+        android:id="@+id/page_number_text"
+        android:layout_width="@dimen/x190"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="1/1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:textColor="@color/colorPageNumber"
+        android:textSize="@dimen/font_30"/>
+    <Button
+        android:id="@+id/page_number_next"
+        android:tag="page_number_next"
+        android:layout_width="@dimen/x66"
+        android:layout_height="@dimen/y66"
+        android:layout_marginLeft="@dimen/x250"
+        android:layout_marginTop="@dimen/y0"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/btn_page_number_right"/>
+</RelativeLayout>

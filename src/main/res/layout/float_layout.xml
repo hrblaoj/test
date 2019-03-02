@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/float_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000">
+
+    <com.shinetvbox.vod.VideoView
+        android:id="@+id/video_float_view"
+        android:tag="video_float_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="visible"
+       >
+    </com.shinetvbox.vod.VideoView>
+    <com.shinetvbox.vod.floatwindow.FloatVideoLayout
+        android:id="@+id/float_screen_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <!--<com.shinektv.vod.glsurface.gltest.MySurfaceView-->
+
+        <!--android:id="@+id/glsurfacetest"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:visibility="visible" />-->
+	
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/float_screen_control"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/video_float_bg"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+
+</RelativeLayout>

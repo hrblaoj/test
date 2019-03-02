@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x370"
+    android:layout_height="@dimen/y662"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <include layout="@layout/item_btn_focus_pay_red_border1" />
+    <ImageView
+        android:layout_width="@dimen/x240"
+        android:layout_height="@dimen/y530"
+        android:layout_centerInParent="true"
+        android:background="@drawable/image_pay_combo_bg" />
+    <TextView
+        android:id="@+id/btn_pay_combo_title"
+        android:layout_width="@dimen/x240"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y94"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:textStyle="bold"
+        android:textColor="@color/colorHomePrimary"
+        android:textSize="@dimen/font_42" />
+    <TextView
+        android:tag="btn_pay_combo_youhuijia"
+        android:layout_width="@dimen/x85"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x65"
+        android:layout_marginTop="@dimen/y216"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:text="@string/btn_pay_combo_youhuijia"
+        android:lines="1"
+        android:textColor="@color/colorHomePrimary"
+        android:textSize="@dimen/font_24" />
+    <TextView
+        android:id="@+id/btn_pay_combo_disprice"
+        android:layout_width="@dimen/x126"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x144"
+        android:layout_marginTop="@dimen/y194"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:textStyle="bold"
+        android:textColor="@color/colorPayCmoboPrice"
+        android:textSize="@dimen/font_48" />
+    <TextView
+        android:tag="btn_pay_combo_price_unit"
+        android:layout_width="@dimen/x34"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x263"
+        android:layout_marginTop="@dimen/y216"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:lines="1"
+        android:text="@string/btn_pay_combo_price_unit"
+        android:textColor="@color/colorHomePrimary"
+        android:textSize="@dimen/font_24" />
+    <TextView
+        android:id="@+id/btn_pay_combo_price"
+        android:layout_width="@dimen/x224"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x73"
+        android:layout_marginTop="@dimen/y264"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:lines="1"
+        android:textColor="@color/colorHomePrimary"
+        android:textSize="@dimen/font_24"/>
+    <ImageView
+        android:id="@+id/image_pay_combo_x"
+        android:layout_width="@dimen/x100"
+        android:layout_height="@dimen/y26"
+        android:layout_marginLeft="@dimen/x196"
+        android:layout_marginTop="@dimen/y270"
+        android:background="@drawable/image_pay_combo_x"/>
+    <TextView
+        android:id="@+id/btn_pay_combo_zhekou"
+        android:layout_width="@dimen/x240"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y332"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:textColor="@color/colorPayCmoboPriceZhekou"
+        android:textSize="@dimen/font_28"/>
+    <TextView
+        android:tag="btn_pay_combo_zunxiangfuwu"
+        android:layout_width="@dimen/x160"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x143"
+        android:layout_marginTop="@dimen/y444"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/btn_pay_combo_zunxiangfuwu"
+        android:textColor="@color/colorPayCmoboZunxiangfuwu"
+        android:textSize="@dimen/font_28" />
+
+    <TextView
+        android:layout_width="@dimen/x132"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x64"
+        android:layout_marginTop="@dimen/y495"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:lines="1"
+        android:tag="btn_pay_combo_download"
+        android:text="@string/btn_pay_combo_download"
+        android:textColor="@color/colorHomePrimary"
+        android:textSize="@dimen/font_20" />
+    <TextView
+        android:id="@+id/btn_pay_combo_download_number"
+        android:layout_width="@dimen/x116"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x190"
+        android:layout_marginTop="@dimen/y495"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/colorHomePrimary"
+        android:textSize="@dimen/font_20" />
+    <TextView
+        android:tag="btn_pay_combo_sung"
+        android:layout_width="@dimen/x132"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x64"
+        android:layout_marginTop="@dimen/y530"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:lines="1"
+        android:text="@string/btn_pay_combo_sung"
+        android:textColor="@color/colorHomePrimary"
+        android:textSize="@dimen/font_20" />
+    <TextView
+        android:id="@+id/btn_pay_combo_sung_number"
+        android:layout_width="@dimen/x116"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x190"
+        android:layout_marginTop="@dimen/y530"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/colorHomePrimary"
+        android:textSize="@dimen/font_20" />
+
+</RelativeLayout>

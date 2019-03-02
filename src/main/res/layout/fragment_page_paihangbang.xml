@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="@dimen/x800"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x86"
+        android:layout_marginTop="@dimen/y36"
+        android:lines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/font_50"
+        android:textColor="@color/colorHomePrimary"
+        android:text="@string/app_home_paihangbang"/>
+    <com.shinetvbox.vod.view.custom.MyRecyclerView
+        android:id="@+id/recyclerview_paihangbang"
+        android:layout_marginTop="@dimen/y40"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.shinetvbox.vod.view.custom.MyRecyclerView>
+</RelativeLayout>

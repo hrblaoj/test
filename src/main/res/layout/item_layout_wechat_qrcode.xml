@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x612"
+    android:layout_height="@dimen/y150"
+    android:background="@drawable/image_keyboard_qrcode_bg">
+
+    <ImageView
+        android:id="@+id/image_keyboard_qrcode"
+        android:layout_width="@dimen/x150"
+        android:layout_height="@dimen/y150"
+        android:background="@drawable/app_sunshine_wechat_qrcode"/>
+    <TextView
+        android:tag="keyboard_text_qrcode_text"
+        android:layout_width="@dimen/x436"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x164"
+        android:layout_marginTop="@dimen/y32"
+        android:textSize="@dimen/font_36"
+        android:textColor="@color/colorKeyboardQrcode"
+        android:lines="1"
+        android:ellipsize="end"
+        android:text="@string/keyboard_text_qrcode_text"/>
+    <TextView
+        android:tag="keyboard_text_qrcode_content"
+        android:layout_width="@dimen/x436"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x164"
+        android:layout_marginTop="@dimen/y78"
+        android:textSize="@dimen/font_28"
+        android:textColor="@color/colorKeyboardHint"
+        android:lines="1"
+        android:ellipsize="end"
+        android:text="@string/keyboard_text_qrcode_content"/>
+</RelativeLayout>

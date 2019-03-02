@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/item_layout_page_number"
+        android:layout_width="@dimen/x316"
+        android:layout_height="@dimen/y66"
+        android:layout_marginLeft="@dimen/x768"
+        android:layout_marginTop="@dimen/y30"/>
+    <RelativeLayout
+        android:id="@+id/singerlist_body"
+        android:layout_width="@dimen/x1200"
+        android:layout_height="@dimen/y804"
+        android:layout_marginLeft="@dimen/x700"
+        android:layout_marginTop="@dimen/y115"/>
+    <LinearLayout
+        android:id="@+id/layout_singerlist_noresult"
+        android:layout_width="@dimen/x1200"
+        android:layout_height="@dimen/y80"
+        android:layout_marginLeft="@dimen/x700"
+        android:layout_marginTop="@dimen/y500"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="@dimen/x70"
+            android:layout_height="@dimen/y70"
+            android:background="@drawable/image_no_result"/>
+        <TextView
+            android:tag="gexingdiange_text_no_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:text="@string/gexingdiange_text_no_result"
+            android:textSize="@dimen/font_44"
+            android:textColor="@color/colorWarning"
+            android:lines="1"
+            android:ellipsize="end"/>
+    </LinearLayout>
+</RelativeLayout>

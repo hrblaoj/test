@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.shinetvbox.vod.view.custom.ButtonFocus xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x170"
+    android:layout_height="@dimen/y220"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <ImageView
+        android:id="@+id/item_layout_image_singer"
+        android:layout_width="@dimen/x170"
+        android:layout_height="@dimen/y170" />
+    <ImageView
+        android:id="@+id/image_focus"
+        android:layout_width="@dimen/x170"
+        android:layout_height="@dimen/y170"
+        android:background="@drawable/image_gexingdiange_singer_border"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/item_layout_text_singername"
+        android:layout_width="@dimen/x170"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y180"
+        android:gravity="center"
+        android:textSize="@dimen/font_30"
+        android:textColor="@color/colorSongListSingerName"
+        android:text="张学友"
+        android:lines="1"
+        android:ellipsize="end"/>
+</com.shinetvbox.vod.view.custom.ButtonFocus>

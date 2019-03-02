@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/btn_home_lang_zhongwenjian"
+        android:maxLevel="0"/>
+    <item
+        android:drawable="@drawable/btn_home_lang_zhongwenfan"
+        android:maxLevel="1"/>
+    <item
+        android:drawable="@drawable/btn_home_lang_yingyu"
+        android:maxLevel="2"/>
+    <item
+        android:drawable="@drawable/btn_home_lang_riyu"
+        android:maxLevel="3"/>
+    <item
+        android:drawable="@drawable/btn_home_lang_hanyu"
+        android:maxLevel="4"/>
+    <item
+        android:drawable="@drawable/btn_home_lang_jianpuzhai"
+        android:maxLevel="5"/>
+    <item
+        android:drawable="@drawable/btn_home_lang_miandian"
+        android:maxLevel="6"/>
+    <item
+        android:drawable="@drawable/btn_home_lang_yinni"
+        android:maxLevel="7"/>
+    <item
+        android:drawable="@drawable/btn_home_lang_taiyu"
+        android:maxLevel="8"/>
+    <item
+        android:drawable="@drawable/btn_home_lang_yuenan"
+        android:maxLevel="9"/>
+</level-list>

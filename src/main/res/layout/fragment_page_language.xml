@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x1920"
+    android:layout_height="@dimen/y1080">
+    <TextView
+        android:tag="language_switch_text_title"
+        android:layout_width="@dimen/x560"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x86"
+        android:layout_marginTop="@dimen/y36"
+        android:text="@string/language_switch_text_title"
+        android:textSize="@dimen/font_50"
+        android:textColor="@color/colorHomePrimary"
+        android:lines="1"
+        android:ellipsize="end"/>
+    <com.shinetvbox.vod.view.custom.MyRecyclerView
+        android:id="@+id/recyclerview_type_language"
+        android:fadingEdge="none"
+        android:layout_width="@dimen/x1806"
+        android:layout_height="@dimen/y624"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y270">
+    </com.shinetvbox.vod.view.custom.MyRecyclerView>
+</RelativeLayout>

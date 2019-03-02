@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="color333333">#333333</color>
+    <color name="color111111">#111111</color>
+    <color name="colorWarning">#FF0000</color>
+    <color name="colorHomePrimary">#FFFFFF</color>
+    <color name="colorHomePlayTitle">#ED5347</color>
+    <color name="colorHomePlayContent">#D4D2D3</color>
+    <color name="colorHomeSelected">#D4D2D3</color>
+    <color name="colorKeyboardHint">#927476</color>
+    <color name="colorKeyboardQrcode">#E0CBCA</color>
+    <color name="colorPageNumber">#927476</color>
+    <color name="colorSongListSongName">#E0CBCA</color>
+    <color name="colorSongListSongNote">#00F9FF</color>
+    <color name="colorSongListSingerName">#927476</color>
+    <color name="colorSongListSongPlaying">#F5622E</color>
+    <color name="colorSongListYidian">#ED5347</color>
+    <color name="colorSongListTagName1">#898888</color>
+    <color name="colorSongListTagName2">#F55E27</color>
+    <color name="colorSongListTagName3">#00ff00</color>
+
+    <color name="colorUpdateAppBackground">#000</color>
+    <color name="colorUpdateAppTitle">#E0CBCA</color>
+    <color name="colorUpdateAppContent">#927476</color>
+    <color name="colorUpdateAppVersion">#00F9FF</color>
+
+    <color name="colorPayTitle">#E0CBCA</color>
+    <color name="colorPayHint">#907375</color>
+    <color name="colorPayCmoboPrice">#FCED8E</color>
+    <color name="colorPayCmoboPriceZhekou">#B74731</color>
+    <color name="colorPayCmoboZunxiangfuwu">#511618</color>
+    <color name="colorPayCmoboSelectPrice">#DD4252</color>
+    <color name="colorPayCmoboSelectQrcodeHint">#937479</color>
+    <color name="colorPayDuihuanma">#393939</color>
+
+</resources>
